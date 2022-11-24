@@ -1,0 +1,6 @@
+.c-list {
+  @apply space-y-1
+         max-w-3xl
+         list-disc
+         list-inside;
+}

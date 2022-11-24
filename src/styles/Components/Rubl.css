@@ -1,0 +1,6 @@
+.c-rubl {
+  @apply inline
+         !font-rubl
+         !font-normal
+         !normal-case;
+}
