@@ -1,5 +1,9 @@
 # vite-mpa-starter
 
+The main problem being solved is the ability to run the project in a browser without a server.
+
+Simply run the `npm run build` CLI command and open the `.html` files located in the `/dist` directory in your web browser.
+
 ## Dependencies
 
 installing dependencies
