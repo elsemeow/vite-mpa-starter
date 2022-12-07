@@ -1,18 +1,20 @@
 import "/styles/main.css";
 
 import $ from "jquery";
-import IMask from "imask";
+import Alpine from "alpinejs";
+import mask from "@alpinejs/mask";
 
 import { setupCounter } from "./Components/Counter.js";
-import { getElementByMaskType } from "./Components/Mask.js";
+import { phoneMask } from "./Components/Mask.js";
 
 window.jQuery = window.$ = $;
-window.IMask = IMask;
+window.Alpine = Alpine;
+
+window.phoneMask = phoneMask;
+
+Alpine.plugin(mask);
+Alpine.start();
 
 $(function () {
   setupCounter(document.querySelector("#counter"));
-
-  getElementByMaskType("phone").each(function (index, value) {
-    IMask(value, { mask: "+{7} (000) 000-00-00" });
-  });
 });

@@ -11,12 +11,14 @@
     <link rel="manifest" href="./favicon/site.webmanifest" />
   </head>
   <body>
-    <div id="panel"></div>
-    {{> header }}
-    <main class="s-hero">
-      {{>@ partial-block }}
-    </main>
-    {{> footer }}
+    <div class="h-screen flex flex-col justify-between">
+      {{> panel }}
+      {{> header }}
+      <main class="mb-auto mx-auto w-full max-w-7xl px-8 py-16">
+        {{>@ partial-block }}
+      </main>
+      {{> footer }}
+    </div>
     <script type="module" src="/scripts/main.js"></script>
   </body>
 </html>

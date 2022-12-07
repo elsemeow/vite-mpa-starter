@@ -1,4 +1,5 @@
 const shared = {
+  app: "vite-mpa-starter",
   lang: "en"
 };
 
@@ -7,9 +8,9 @@ const viewsConfig = {
     shared,
     title: "Home"
   },
-  "/about.html": {
+  "/page.html": {
     shared,
-    title: "About"
+    title: "Page"
   }
 };
 

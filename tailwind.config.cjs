@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/*.html", "./src/partials/*.html", "./src/scripts/**/*.js"],
   theme: {
     extend: {
+      backgroundImage: {
+        "list-icon-arrow": 'url("/assets/images/arrow.svg")'
+      },
       fontFamily: {
         sans: [
           '"Noto Sans Display"',

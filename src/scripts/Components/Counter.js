@@ -1,5 +1,5 @@
 /**
- * @param {Object} element
+ * @param {object} element
  */
 export function setupCounter(element) {
   if (!element) return;

@@ -1,0 +1,6 @@
+.s-section {
+  @apply border
+         border-indigo-500
+         rounded-lg
+         p-6;
+}

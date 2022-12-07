@@ -27,7 +27,8 @@
     "vite-plugin-handlebars": "^1.6.0"
   },
   "dependencies": {
-    "imask": "^6.4.3",
+    "@alpinejs/mask": "^3.10.5",
+    "alpinejs": "^3.10.5",
     "jquery": "^3.6.1"
   }
 }

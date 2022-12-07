@@ -1,6 +1,24 @@
 .c-list {
-  @apply space-y-1
-         max-w-3xl
-         list-disc
-         list-inside;
+  @apply list-none
+         text-lg;
+  margin-left: calc(var(--list-icon-size) + var(--list-icon-gap));
+
+  & li {
+    @apply relative
+           mb-2
+           last:mb-0;
+
+    &::before {
+      @apply content-[""]
+             absolute
+             top-[6px]
+             w-[var(--list-icon-size)]
+             h-[var(--list-icon-size)]
+             bg-center
+             bg-contain
+             bg-no-repeat
+             bg-list-icon-arrow;
+      left: calc(-1 * var(--list-icon-size) - var(--list-icon-gap));
+    }
+  }
 }
