@@ -4,6 +4,8 @@ The main problem being solved is the ability to run the project in a browser wit
 
 Simply run the `npm run build` CLI command and open the `.html` files located in the `/dist` directory in your web browser.
 
+_You can remove unnecessary dependencies such as Alpine.js or jQuery._
+
 ## Dependencies
 
 installing dependencies
@@ -65,14 +67,36 @@ The `.html` files use the [handlebars](https://handlebarsjs.com) template engine
 
 ### Configs
 
-- `tailwind.config.cjs` - more information on [tailwindcss](https://tailwindcss.com/docs/configuration) official site;
-- `views.config.js` - list of views with variables;
-- `vite.config.js` - more information on [Vite](https://vitejs.dev/config) official site.
+- `/tailwind.config.cjs` - more information on [tailwindcss](https://tailwindcss.com/docs/configuration) official site;
+- `/views.config.js` - list of views with variables;
+- `/vite.config.js` - more information on [Vite](https://vitejs.dev/config) official site.
 
 ### Output directory
 
 `/dist`
 
-## Favicon
+## Useful links
 
-You can use [favicon generator](https://favicon.io).
+### [Favicon Generator](https://favicon.io)
+
+> Quickly generate your favicon from text, image, or choose from hundreds of emojis.
+
+### [Alpine.js](https://alpinejs.dev/start-here)
+
+> Alpine is a rugged, minimal tool for composing behavior directly in your markup.
+
+### [Alpine.js Mask Plugin](https://alpinejs.dev/plugins/mask)
+
+> Alpine's Mask plugin allows you to automatically format a text input field as a user types.
+
+### [jQuery API](https://api.jquery.com)
+
+> jQuery is a fast, small, and feature-rich JavaScript library.
+
+### Tailwindcss official plugins
+
+- [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin);
+- [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms);
+- [@tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio);
+- [@tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp);
+- [@tailwindcss/container-queries](https://github.com/tailwindlabs/tailwindcss-container-queries).

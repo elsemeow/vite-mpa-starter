@@ -1,4 +1,5 @@
 :root {
-  --list-icon-size: 20px;
-  --list-icon-gap: 6px;
+  --list-leading: 1.75rem;
+  --list-icon-size: 1.25rem;
+  --list-icon-gap: 0.25rem;
 }
