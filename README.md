@@ -6,7 +6,27 @@ Simply run the `npm run build` CLI command and open the `.html` files located in
 
 _You can remove unnecessary dependencies such as Alpine.js or jQuery._
 
-## Dependencies
+## Command line interface
+
+start dev server, aliases: `vite dev`, `vite serve`
+
+```
+npm run dev
+```
+
+build for production (creates `/dist`)
+
+```
+npm run build
+```
+
+locally preview production build
+
+```
+npm run preview
+```
+
+### Dependencies
 
 installing dependencies
 
@@ -30,26 +50,6 @@ remove package
 
 ```
 npm remove [package_name]
-```
-
-## Command line interface
-
-start dev server, aliases: `vite dev`, `vite serve`
-
-```
-npm run dev
-```
-
-build for production (creates `/dist`)
-
-```
-npm run build
-```
-
-locally preview production build
-
-```
-npm run preview
 ```
 
 ## File structure
