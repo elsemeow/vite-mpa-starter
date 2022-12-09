@@ -79,12 +79,12 @@ The `.html` files use the [handlebars](https://handlebarsjs.com) template engine
 
 ### CSS
 
-Each chunk of CSS code must be in a directory depending on its type (`/src/styles/Components` or `/src/styles/Section`).
+Each chunk of CSS code must be in a directory depending on its type (`/src/styles/Components` or `/src/styles/Sections`).
 
 Use prefixes for custom classes.
 
-- `c-` for `Components`;
-- `s-` for `Sections`.
+- `c-` for сomponents;
+- `s-` for sections.
 
 Import your fonts in the `/src/styles/fonts.css` file. CSS variables are placed in the `/src/styles/variables.css` file.
 
