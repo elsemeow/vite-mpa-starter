@@ -2,8 +2,19 @@
 <h1 class="text-5xl font-extrabold mb-10">{{ title }}</h1>
 <section class="s-section mb-10">
   <p class="mb-5">Click the button below</p>
+  <!--
+   | JavaScript counter component example
+   |
+   | Source code: `/src/scripts/Components/Counter.js`
+   -->
   <button id="counter" class="c-btn"></button>
+  <!-- / JavaScript counter component example -->
 </section>
+<!--
+ | Alpine.js accordion component example
+ |
+ | @param {number} openedIndex - Opened accordion item by default. `-1` - collapse all.
+ -->
 <div x-data="{ openedIndex: 1 }" class="flex flex-col gap-y-5">
   <div class="border border-gray-300 rounded-lg">
     <div
@@ -28,4 +39,5 @@
     </div>
   </div>
 </div>
+<!-- / Alpine.js accordion component example -->
 {{/ layout }}

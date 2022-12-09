@@ -75,6 +75,23 @@ The `.html` files use the [handlebars](https://handlebarsjs.com) template engine
 
 `/dist`
 
+## Code style
+
+### CSS
+
+Each chunk of CSS code must be in a directory depending on its type (`/src/styles/Components` or `/src/styles/Section`).
+
+Use prefixes for custom classes.
+
+- `c-` for `Components`;
+- `s-` for `Sections`.
+
+Import your fonts in the `/src/styles/fonts.css` file. CSS variables are placed in the `/src/styles/variables.css` file.
+
+### JavaScript
+
+Custom components must be located in the `/src/scripts/Components` directory and included in the `/src/scripts/main.js` file.
+
 ## Useful links
 
 ### [Favicon Generator](https://favicon.io)
