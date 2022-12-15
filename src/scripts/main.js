@@ -1,4 +1,4 @@
-import "/styles/main.css";
+import "../styles/main.css";
 
 import $ from "jquery";
 import Alpine from "alpinejs";

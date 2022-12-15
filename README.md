@@ -2,7 +2,7 @@
 
 ## Description
 
-A pre-built bunch of tools for rapid front-end prototyping. Based on Vite, Handlebars, PostCSS and TailwindCSS.
+Boilerplate for rapid front-end prototyping. Based on Vite, Handlebars, PostCSS and TailwindCSS.
 
 The main problem being solved is the ability to run the project in a browser without a server.
 
@@ -20,45 +20,63 @@ You can remove unnecessary dependencies such as Alpine.js or jQuery.
 
 ## Command line interface
 
-start dev server, aliases: `vite dev`, `vite serve`
+Start dev server, aliases: `vite dev`, `vite serve`
 
 ```
 npm run dev
 ```
 
-build for production (creates `/dist`)
+Build for production (creates `/dist`)
 
 ```
 npm run build
 ```
 
-locally preview production build
+Locally preview production build
 
 ```
 npm run preview
 ```
 
+Check all `*.js` files in the `/src/scripts` directory with [ESLint](https://eslint.org)
+
+```
+npm run lint
+```
+
+Format code in `/src` directory using [Prettier](https://prettier.io)
+
+```
+npm run format
+```
+
+This command is a combination of `npm run format` and `npm run lint`
+
+```
+npm run check
+```
+
 ### Dependencies
 
-installing dependencies
+Installing dependencies
 
 ```
 npm install
 ```
 
-add new package to `devDependencies`
+Add new package to `devDependencies`
 
 ```
 npm add -D [package_name]
 ```
 
-add new package to `dependencies`
+Add new package to `dependencies`
 
 ```
 npm add [package_name]
 ```
 
-remove package
+Remove package
 
 ```
 npm remove [package_name]
@@ -100,9 +118,30 @@ Use prefixes for custom classes.
 
 Import your fonts in the `/src/styles/fonts.css` file. CSS variables are placed in the `/src/styles/variables.css` file.
 
+The formatting guidelines for TailwindCSS utilities bundled with the `@apply` rule are shown in the example below. This formatting is used to avoid problems when teamwork using GIT.
+
+```css
+.c-btn {
+  @apply text-gray-900
+         bg-white
+         border
+         border-gray-300
+         font-medium
+         rounded-lg
+         text-sm;
+}
+```
+
 ### JavaScript
 
 Custom components must be located in the `/src/scripts/Components` directory and included in the `/src/scripts/main.js` file.
+
+## ESLint and Prettier
+
+The configurations for ESLint and Prettier is in the `package.json` file (`"eslintConfig": { ... }`, `"prettier": { ... }`).
+
+- [Prettier options](https://prettier.io/docs/en/options.html);
+- [ESLint rules](https://eslint.org/docs/latest/rules).
 
 ## Useful links
 
@@ -122,10 +161,15 @@ Custom components must be located in the `/src/scripts/Components` directory and
 
 > jQuery is a fast, small, and feature-rich JavaScript library.
 
-### Tailwindcss official plugins
+### TailwindCSS official plugins
 
 - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin);
 - [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms);
 - [@tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio);
 - [@tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp);
 - [@tailwindcss/container-queries](https://github.com/tailwindlabs/tailwindcss-container-queries).
+
+### ESLint extenders
+
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier);
+- [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import).

@@ -12,13 +12,25 @@
   </head>
   <body>
     <div class="h-screen flex flex-col justify-between">
+      <!-- panel -->
       {{> panel }}
+      <!-- / panel -->
+
+      <!-- header -->
       {{> header }}
+      <!-- / header -->
+
       <main class="mb-auto mx-auto w-full max-w-7xl px-8 py-16">
+        <!-- content -->
         {{>@ partial-block }}
+        <!-- / content -->
       </main>
+
+      <!-- footer -->
       {{> footer }}
+      <!-- / footer -->
     </div>
+
     <script type="module" src="/scripts/main.js"></script>
   </body>
 </html>

@@ -1,7 +1,8 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 import FastGlob from "fast-glob";
-import handlebars from "vite-plugin-handlebars";
+
+import handlebarsPlugin from "vite-plugin-handlebars";
 
 import tailwindcss from "tailwindcss";
 import tailwindcssNesting from "tailwindcss/nesting";
@@ -26,7 +27,7 @@ export default defineConfig({
   root: resolve(process.cwd(), "src"),
   base: "./",
   plugins: [
-    handlebars({
+    handlebarsPlugin({
       context(path) {
         return viewsConfig[path];
       },
