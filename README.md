@@ -14,7 +14,7 @@ You can remove unnecessary dependencies such as Alpine.js or jQuery.
 
 ### Dev server
 
-- Quite rarely there are problems when TailwindCSS parses its classes in `.html` and `.js` files, to solve this problem, just restart the dev server;
+- Quite rarely there are problems when TailwindCSS parses its classes in `.html` files, to solve this problem, just restart the dev server;
 
 - When adding new Handlebars variables or pages to `/views.config.js`, restart the dev server, otherwise they may not work properly.
 
