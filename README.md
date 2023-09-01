@@ -32,12 +32,6 @@ Build for production (creates `/dist`)
 npm run build
 ```
 
-Locally preview production build
-
-```
-npm run preview
-```
-
 Check all `*.js` files in the `/src/scripts` directory with [ESLint](https://eslint.org)
 
 ```
@@ -48,12 +42,6 @@ Format code in `/src` directory using [Prettier](https://prettier.io)
 
 ```
 npm run format
-```
-
-This command is a combination of `npm run format` and `npm run lint`
-
-```
-npm run check
 ```
 
 ### Dependencies
@@ -109,14 +97,7 @@ The `.html` files use the [Handlebars](https://handlebarsjs.com) template engine
 
 ### CSS
 
-Each chunk of CSS code must be in a directory depending on its type (`/src/styles/Components` or `/src/styles/Sections`).
-
-Use prefixes for custom classes.
-
-- `c-` for сomponents;
-- `s-` for sections.
-
-Import your fonts in the `/src/styles/fonts.css` file. CSS variables are placed in the `/src/styles/variables.css` file.
+Use `c-`prefix for сomponents.
 
 The formatting guidelines for TailwindCSS utilities bundled with the `@apply` rule are shown in the example below. This formatting is used to avoid problems when teamwork using GIT.
 
@@ -157,16 +138,11 @@ The configurations for ESLint and Prettier is in the `package.json` file (`"esli
 
 > Alpine's Mask plugin allows you to automatically format a text input field as a user types.
 
-### [jQuery API](https://api.jquery.com)
-
-> jQuery is a fast, small, and feature-rich JavaScript library.
-
 ### TailwindCSS official plugins
 
 - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin);
 - [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms);
 - [@tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio);
-- [@tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp);
 - [@tailwindcss/container-queries](https://github.com/tailwindlabs/tailwindcss-container-queries).
 
 ### ESLint extenders

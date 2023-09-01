@@ -1,7 +1,7 @@
 {{#> layout }}
 <h1 class="text-5xl font-extrabold mb-10">{{ title }}</h1>
 
-<section class="s-section mb-10">
+<section class="section mb-10">
   <p class="mb-5">Click the button below</p>
 
   <!--
@@ -20,26 +20,16 @@
  -->
 <div x-data="{ openedIndex: 1 }" class="flex flex-col gap-y-5">
   <div class="border border-gray-300 rounded-lg">
-    <div
-      @click="openedIndex == 1 ? openedIndex = -1 : openedIndex = 1"
-      class="p-5 flex items-center justify-between rounded-lg cursor-pointer hover:bg-gray-100"
-    >
+    <div @click="openedIndex == 1 ? openedIndex = -1 : openedIndex = 1" class="p-5 flex items-center justify-between rounded-lg cursor-pointer hover:bg-gray-100">
       <p class="font-medium text-lg">Accordion item 1</p>
     </div>
-    <div x-show="openedIndex == 1" class="p-5" x-transition>
-      Now this is a story all about how, my life got flipped-turned upside down.
-    </div>
+    <div x-show="openedIndex == 1" class="p-5" x-transition>Now this is a story all about how, my life got flipped-turned upside down.</div>
   </div>
   <div class="border border-gray-300 rounded-lg">
-    <div
-      @click="openedIndex == 2 ? openedIndex = -1 : openedIndex = 2"
-      class="p-5 flex items-center justify-between rounded-lg cursor-pointer hover:bg-gray-100"
-    >
+    <div @click="openedIndex == 2 ? openedIndex = -1 : openedIndex = 2" class="p-5 flex items-center justify-between rounded-lg cursor-pointer hover:bg-gray-100">
       <p class="font-medium text-lg">Accordion item 2</p>
     </div>
-    <div x-show="openedIndex == 2" class="p-5" x-transition>
-      And I'd like to take a minute just sit right there.
-    </div>
+    <div x-show="openedIndex == 2" class="p-5" x-transition>And I'd like to take a minute just sit right there.</div>
   </div>
 </div>
 <!-- / Alpine.js accordion component example -->
