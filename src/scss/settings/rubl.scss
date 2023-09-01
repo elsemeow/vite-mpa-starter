@@ -1,0 +1,13 @@
+//--------------------------------------------------------------------------
+// RUBL
+//--------------------------------------------------------------------------
+//
+// This is an rouble sign font required for `objects/rubl.scss`.
+//
+
+@font-face {
+  font-family: Rubl Sign;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../assets/fonts/ruble/ruble.ttf) format('truetype');
+}

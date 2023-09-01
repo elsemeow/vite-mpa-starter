@@ -1,0 +1,25 @@
+// 1. Custom variables and variable overwrites
+//--------------------------------------------------------------------------
+
+$inverse-global-color-mode: none;
+$global-font-family: setSansFontFamily('Overpass');
+$base-code-font-family: setMonoFontFamily('Fira Code');
+$global-font-size: setDynamicFontSize(16px, 20px);
+$global-color: #222;
+$global-emphasis-color: #000;
+$global-background: #fff;
+$global-muted-background: #f3f4f6;
+$global-primary-background: #3b82f6;
+$global-success-background: #22c55e;
+$global-warning-background: #f59e0b;
+$global-danger-background: #dc2626;
+$global-secondary-background: #1f2937;
+$offcanvas-bar-background: $global-background;
+$offcanvas-overlay-background: rgba(0, 0, 0, 0.6);
+$modal-background: rgba(0, 0, 0, 0.6);
+$internal-form-checkbox-image: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2210%22%20height%3D%228%22%20viewBox%3D%220%200%2010%208%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22#000%22%20d%3D%22M8.02458%201.11652C8.34826%200.794493%208.87082%200.794493%209.1945%201.11652L9.19631%201.11832C9.51833%201.44201%209.51833%201.96457%209.19631%202.28825L9.19541%202.28916L4.59984%206.88472C4.43901%207.04391%204.22737%207.12516%204.01579%207.12516C3.80421%207.12516%203.59257%207.0439%203.43174%206.88471L3.42992%206.88291L0.804923%204.2579L0.80402%204.257C0.481993%203.93332%200.481993%203.41076%200.80402%203.08708L0.805824%203.08527C1.1295%202.76324%201.65207%202.76324%201.97575%203.08527L1.9767%203.08622L4.01581%205.12589L8.02365%201.11745L8.02458%201.11652Z%22%2F%3E%3C%2Fsvg%3E%0A';
+
+// 2. Import default variables
+//--------------------------------------------------------------------------
+
+@import '~uikit/src/scss/variables-theme.scss';

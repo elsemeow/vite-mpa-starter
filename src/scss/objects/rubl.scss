@@ -1,0 +1,29 @@
+//--------------------------------------------------------------------------
+// RUBL
+//--------------------------------------------------------------------------
+//
+// Rouble sign polyfill.
+//
+// Usage example:
+//
+//   10 000<span class="o-rubl">a</span>
+//
+// Output: `10 000₽`
+//
+// Possible chars inside `<span>`:
+// - 'a' = Arial Regular;
+// - 'b' = Arial Italic;
+// - 'c' = Arial Bold;
+// - 'd' = Arial Bold Italic.
+//
+// Horizontal spacing with `&nbsp;`.
+//
+// Requires a "Rubl Sign" font to work.
+//
+
+.o-rubl {
+  display: inline;
+  font-family: Rubl Sign !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+}

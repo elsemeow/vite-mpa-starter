@@ -1,0 +1,40 @@
+//--------------------------------------------------------------------------
+// FONTS
+//--------------------------------------------------------------------------
+//
+// Global fonts import.
+//
+
+// Global font family
+//--------------------------------------------------------------------------
+
+@font-face {
+  font-family: 'Overpass';
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url(../assets/fonts/overpass/Overpass-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Overpass';
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+  src: url(../assets/fonts/overpass/Overpass-Italic-VariableFont_wght.ttf) format('truetype');
+}
+
+// Base code font family
+//--------------------------------------------------------------------------
+
+@font-face {
+  font-family: 'Fira Code';
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../assets/fonts/firacode/FiraCode-VariableFont_wght.ttf)
+    format('truetype');
+}
+
+// Custom fonts
+//--------------------------------------------------------------------------

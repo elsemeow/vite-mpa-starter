@@ -1,0 +1,25 @@
+//--------------------------------------------------------------------------
+// FONT FAMILY
+//--------------------------------------------------------------------------
+//
+// Function to set the font family of an variables.
+//
+// e.g. `uikit/variables.scss`
+//
+//   $global-font-family: t-set-sans-font-family(Inter VF);
+//
+
+// sans-serif
+@function setSansFontFamily($font-family) {
+  @return #{$font-family}, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+// mono
+@function setMonoFontFamily($font-family) {
+  @return #{$font-family}, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, 'Courier New', monospace;
+}
+
+// serif
+@function setSerifFontFamily($font-family) {
+  @return #{$font-family}, ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+}

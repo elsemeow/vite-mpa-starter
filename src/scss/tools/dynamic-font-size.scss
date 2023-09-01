@@ -1,0 +1,16 @@
+//--------------------------------------------------------------------------
+// DYNAMIC FONT SIZE
+//--------------------------------------------------------------------------
+//
+// Function to set dynamic global font size,
+// may affects: margins, paddings, width, height etc.
+// when you use `rem` units.
+//
+// e.g. `uikit/variables.scss`
+//
+//   $global-font-size: setDynamicFontSize('16px', '20px');
+//
+
+@function setDynamicFontSize($min, $max) {
+  @return clamp(#{$min}, calc(0.7rem + 0.25vw), #{$max});
+}

@@ -1,0 +1,9 @@
+// 5. Import UIkit
+//--------------------------------------------------------------------------
+
+@import '~uikit/src/scss/uikit-theme.scss';
+
+// 6. Custom UIkit classes overwrites
+//--------------------------------------------------------------------------
+
+@import './extend/form.scss';

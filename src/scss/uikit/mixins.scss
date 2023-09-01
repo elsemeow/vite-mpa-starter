@@ -1,0 +1,95 @@
+// 3. Import available mixins
+//--------------------------------------------------------------------------
+
+@import '~uikit/src/scss/mixins-theme.scss';
+
+// 4. Custom mixin overwrites
+//--------------------------------------------------------------------------
+
+@mixin hook-button() {
+  @apply tw-rounded-sm;
+}
+
+@mixin hook-width-misc() {
+  // Twelfths
+  .uk-width-1-12 { width: unquote('calc(100% * 1 / 12.001)'); }
+  .uk-width-2-12 { width: unquote('calc(100% * 2 / 12.001)'); }
+  .uk-width-3-12 { width: 25%; }
+  .uk-width-4-12 { width: unquote('calc(100% * 4 / 12.001)'); }
+  .uk-width-5-12 { width: unquote('calc(100% * 5 / 12.001)'); }
+  .uk-width-6-12 { width: 50%; }
+  .uk-width-7-12 { width: unquote('calc(100% * 7 / 12.001)'); }
+  .uk-width-8-12 { width: unquote('calc(100% * 8 / 12.001)'); }
+  .uk-width-9-12 { width: 75%; }
+  .uk-width-10-12 { width: unquote('calc(100% * 10 / 12.001)'); }
+  .uk-width-11-12 { width: unquote('calc(100% * 11 / 12.001)'); }
+  .uk-width-12-12 { width: 100%; }
+
+  // Phone landscape and bigger
+  @media (min-width: $breakpoint-small) {
+    // Twelfths
+    .uk-width-1-12\@s { width: unquote('calc(100% * 1 / 12.001)'); }
+    .uk-width-2-12\@s { width: unquote('calc(100% * 2 / 12.001)'); }
+    .uk-width-3-12\@s { width: 25%; }
+    .uk-width-4-12\@s { width: unquote('calc(100% * 4 / 12.001)'); }
+    .uk-width-5-12\@s { width: unquote('calc(100% * 5 / 12.001)'); }
+    .uk-width-6-12\@s { width: 50%; }
+    .uk-width-7-12\@s { width: unquote('calc(100% * 7 / 12.001)'); }
+    .uk-width-8-12\@s { width: unquote('calc(100% * 8 / 12.001)'); }
+    .uk-width-9-12\@s { width: 75%; }
+    .uk-width-10-12\@s { width: unquote('calc(100% * 10 / 12.001)'); }
+    .uk-width-11-12\@s { width: unquote('calc(100% * 11 / 12.001)'); }
+    .uk-width-12-12\@s { width: 100%; }
+  }
+
+  // Tablet landscape and bigger
+  @media (min-width: $breakpoint-medium) {
+    // Twelfths
+    .uk-width-1-12\@m { width: unquote('calc(100% * 1 / 12.001)'); }
+    .uk-width-2-12\@m { width: unquote('calc(100% * 2 / 12.001)'); }
+    .uk-width-3-12\@m { width: 25%; }
+    .uk-width-4-12\@m { width: unquote('calc(100% * 4 / 12.001)'); }
+    .uk-width-5-12\@m { width: unquote('calc(100% * 5 / 12.001)'); }
+    .uk-width-6-12\@m { width: 50%; }
+    .uk-width-7-12\@m { width: unquote('calc(100% * 7 / 12.001)'); }
+    .uk-width-8-12\@m { width: unquote('calc(100% * 8 / 12.001)'); }
+    .uk-width-9-12\@m { width: 75%; }
+    .uk-width-10-12\@m { width: unquote('calc(100% * 10 / 12.001)'); }
+    .uk-width-11-12\@m { width: unquote('calc(100% * 11 / 12.001)'); }
+    .uk-width-12-12\@m { width: 100%; }
+  }
+
+  // Desktop and bigger
+  @media (min-width: $breakpoint-large) {
+    // Twelfths
+    .uk-width-1-12\@l { width: unquote('calc(100% * 1 / 12.001)'); }
+    .uk-width-2-12\@l { width: unquote('calc(100% * 2 / 12.001)'); }
+    .uk-width-3-12\@l { width: 25%; }
+    .uk-width-4-12\@l { width: unquote('calc(100% * 4 / 12.001)'); }
+    .uk-width-5-12\@l { width: unquote('calc(100% * 5 / 12.001)'); }
+    .uk-width-6-12\@l { width: 50%; }
+    .uk-width-7-12\@l { width: unquote('calc(100% * 7 / 12.001)'); }
+    .uk-width-8-12\@l { width: unquote('calc(100% * 8 / 12.001)'); }
+    .uk-width-9-12\@l { width: 75%; }
+    .uk-width-10-12\@l { width: unquote('calc(100% * 10 / 12.001)'); }
+    .uk-width-11-12\@l { width: unquote('calc(100% * 11 / 12.001)'); }
+    .uk-width-12-12\@l { width: 100%; }
+  }
+
+  // Large screen and bigger
+  @media (min-width: $breakpoint-xlarge) {
+    // Twelfths
+    .uk-width-1-12\@xl { width: unquote('calc(100% * 1 / 12.001)'); }
+    .uk-width-2-12\@xl { width: unquote('calc(100% * 2 / 12.001)'); }
+    .uk-width-3-12\@xl { width: 25%; }
+    .uk-width-4-12\@xl { width: unquote('calc(100% * 4 / 12.001)'); }
+    .uk-width-5-12\@xl { width: unquote('calc(100% * 5 / 12.001)'); }
+    .uk-width-6-12\@xl { width: 50%; }
+    .uk-width-7-12\@xl { width: unquote('calc(100% * 7 / 12.001)'); }
+    .uk-width-8-12\@xl { width: unquote('calc(100% * 8 / 12.001)'); }
+    .uk-width-9-12\@xl { width: 75%; }
+    .uk-width-10-12\@xl { width: unquote('calc(100% * 10 / 12.001)'); }
+    .uk-width-11-12\@xl { width: unquote('calc(100% * 11 / 12.001)'); }
+    .uk-width-12-12\@xl { width: 100%; }
+  }
+}
