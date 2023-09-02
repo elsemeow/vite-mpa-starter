@@ -3,8 +3,8 @@ import "../styles/main.css";
 import Alpine from "alpinejs";
 import mask from "@alpinejs/mask";
 
-import { phoneMask } from "./Components/Mask.js";
-import { setupCounter } from "./Components/Counter.js";
+import { phoneMask } from "./components/Mask.js";
+import { setupCounter } from "./components/Counter.js";
 
 window.Alpine = Alpine;
 window.phoneMask = phoneMask;
