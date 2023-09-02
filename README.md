@@ -8,8 +8,6 @@ The main problem being solved is the ability to run the project in a browser wit
 
 Simply run the `npm run build` CLI command and open the `.html` files located in the `/dist` directory in your web browser.
 
-You can remove unnecessary dependencies such as Alpine.js or jQuery.
-
 ## Possible issues
 
 ### Dev server
@@ -97,7 +95,7 @@ The `.html` files use the [Handlebars](https://handlebarsjs.com) template engine
 
 ### CSS
 
-Use `c-`prefix for сomponents.
+Use `c-` prefix for сomponents.
 
 The formatting guidelines for TailwindCSS utilities bundled with the `@apply` rule are shown in the example below. This formatting is used to avoid problems when teamwork using GIT.
 
@@ -125,10 +123,6 @@ The configurations for ESLint and Prettier is in the `package.json` file (`"esli
 - [ESLint rules](https://eslint.org/docs/latest/rules).
 
 ## Useful links
-
-### [Favicon Generator](https://favicon.io)
-
-> Quickly generate your favicon from text, image, or choose from hundreds of emojis.
 
 ### [Alpine.js](https://alpinejs.dev/start-here)
 
